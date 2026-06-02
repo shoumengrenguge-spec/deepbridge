@@ -7,11 +7,11 @@ data = {
     "messages": [
         {
             "role": "user",
-            "content": "hello"
+            "content": "你好"
         }
     ]
 }
 
-response = requests.post(url, json=data)
+r = requests.post(url, json=data)
 
-print(response.text)
+print(r.json())
